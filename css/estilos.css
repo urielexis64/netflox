@@ -81,7 +81,10 @@ header nav a.active{
     line-height: 1.75em;
     max-width: 50%;
     margin-bottom: 1.12em;
-}
+    background: rgba(50, 50, 50, .6);
+    padding-left: .5em;
+    border-radius: 1em;
+} 
 
 .main-movie button{
     background: rgba(0,0,0,0.5);
@@ -104,3 +107,23 @@ header nav a.active{
     margin-right: 1.25em;
 }
 
+/*=====================Media queries=======================*/
+@media screen and (max-width:800px){
+    header .logo{
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+
+    header .container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-movie{
+        font-size: 14px;
+    }
+
+    .main-movie .description{
+        max-width: 100%;
+    }
+}
