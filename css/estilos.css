@@ -1,0 +1,52 @@
+:root{
+    --red: #E50914;
+    --bg-color: #141414;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--bg-color);
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+
+}
+
+header{
+    padding: 30px 0px;
+
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    color: var(--red);
+    font-size: 40px;
+}
+
+header nav a{
+    color: #AAA;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+header nav a:hover,
+header nav a.active{
+    color: #FFF;
+}
