@@ -82,7 +82,7 @@ header nav a.active{
     max-width: 50%;
     margin-bottom: 1.12em;
     background: rgba(50, 50, 50, .6);
-    padding-left: .5em;
+    padding: .5em;
     border-radius: 1em;
 } 
 
