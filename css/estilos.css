@@ -107,19 +107,19 @@ header nav a.active{
     margin-right: 1.25em;
 }
 
-/* ---- ----- ----- Contenedor Titulo y Controles ----- ----- ----- */
-.contenedor-titulo-controles {
+/* ---- ----- ----- Container, title & Controls ----- ----- ----- */
+.container-title-controls {
 	display: flex;
 	justify-content: space-between;
 	align-items: end;
 }
 
-.contenedor-titulo-controles h3 {
+.container-title-controls h3 {
 	color: #fff;
 	font-size: 30px;
 }
 
-.contenedor-titulo-controles .indicadores button {
+.container-title-controls .indicators button {
 	background: #fff;
 	height: 3px;
 	width: 10px;
@@ -128,13 +128,13 @@ header nav a.active{
 	margin-right: 2px;
 }
 
-.contenedor-titulo-controles .indicadores button:hover,
-.contenedor-titulo-controles .indicadores button.activo {
+.container-title-controls .indicators button:hover,
+.container-title-controls .indicators button.active {
 	background: red;
 }
 
 
-/* ---- ----- ----- Contenedor Principal y Flechas ----- ----- ----- */
+/* ---- ----- ----- Main Container and arrows control ----- ----- ----- */
 .recommended-movies {
 	margin-bottom: 70px;
 }
@@ -157,7 +157,8 @@ header nav a.active{
 	width: 50px;
 	color: #fff;
 	cursor: pointer;
-	z-index: 500;
+    z-index: 1;
+    outline: none;
 	transition: .2s ease all;
 }
 
@@ -188,14 +189,15 @@ header nav a.active{
 }
 
 .recommended-movies .carousel-container .carousel .movie {
-	min-width: 20%;
-	transition: .3s ease all;
-	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+    min-width: 20%;
+    transition: .3s ease all;
+    box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+    outline:rgba(255, 255, 255, .5) solid 1px;
 }
 
 .recommended-movies .carousel-container .carousel .movie.hover {
-	transform: scale(1.2);
-	transform-origin: center;
+    filter: brightness(1.1);
+    transform: scale(1.05);
 }
 
 .recommended-movies .carousel-container .carousel .movie img {
