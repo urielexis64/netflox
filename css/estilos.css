@@ -58,7 +58,7 @@ header nav a.active {
     font-size: 16px;
     min-height: 40.62em;
     color: #FFF;
-    background: linear-gradient(rgba(10, 10, 10, 50%) 0%, rgba(50, 50, 50, 50%) 100%), url('img/shrekbackdrop.jpg');
+    background: linear-gradient(rgba(10, 10, 10, 50%) 0%, rgba(50, 50, 50, 50%) 100%), url(img/shrekbackdrop.jpg);
     background-position: center center;
     background-size: cover;
     margin-bottom: 3.12em;
